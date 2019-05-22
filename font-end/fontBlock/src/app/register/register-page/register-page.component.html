@@ -1,0 +1,26 @@
+<mat-card  class="example-form">
+  ลงทะเบียนนักศึกษาจ้างงาน
+  <form >
+    <mat-form-field class="example-full-width">
+      <input [(ngModel)]="registers.name" name="name"  matInput placeholder="ชื่อ นามสกุล"  >
+    </mat-form-field>
+    &nbsp; &nbsp; &nbsp;
+    <mat-form-field class="example-full-width">
+      <input [(ngModel)]="registers.studentID" name="studentID" matInput  placeholder="รหัสนักศึกษา" >
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="registers.major" name="major"  placeholder="สาขาวิชา" >
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <input [(ngModel)]="registers.userName" name="userName" matInput  placeholder="Username" >
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <input [(ngModel)]="registers.userPass" name="userPass" matInput type="password"  placeholder="Password" >
+    </mat-form-field>
+    <br>
+  </form>
+  <button (click) = "registerUser()" mat-raised-button color="primary"  >Submit</button>
+</mat-card>
