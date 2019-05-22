@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django.contrib.admin',
     'corsheaders',
+    'herokuapp',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
